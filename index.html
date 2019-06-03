@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+		<div class="vopros1">
+			<img style="height: 400px" src="door.png" class="otvet mt-5 ml-5">
+			<img style="height: 400px" src="door2.png" class="otvet2 mt-5 ml-5">
+			<img style="height: 400px" src="door3.png" class="otvet3 mt-5 ml-5">
+		</div>
+	</div>
+	<div>
+		<div style="display:none" class="vopros2">
+			<div style="height:750px; background-image: url(bg.jpg); background-size: 100% 100%;">
+				<h2 class="text-danger" style="text-align: center;">Школа волшебства</h2>
+				<h2 style="text-align: center;" class="zero text-danger">0</h2>
+				<button class="btn btn-success vihod">выход</button>
+				<img class="vopros3" style="height:50px; margin-top:100px; margin-left: 400px; position: absolute;" src="metla.png">
+				<img style="height:75px; margin-top:100px; margin-left: 200px; position: absolute;" src="gun.png">
+				<img class="vopros4" style="height:75px; margin-top:520px; margin-left: 470px; position: absolute;" src="mantiya.png">
+				<img class="vopros5" style="height:50px; margin-top:400px; margin-left: 150px; position: absolute;" src="palochka.png">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let ochki = 0
+		document.querySelector(".otvet").onclick = function() {
+			alert("Добро пожаловать в хогвартс!!");
+			document.querySelector(".vopros1").style.display="none"
+		document.querySelector(".vopros2").style.display="block"
+		}
+		document.querySelector(".otvet2").onclick = function() {
+			alert("нужен ключ");
+		
+		}
+		document.querySelector(".otvet3").onclick = function() {
+		alert("неверно");
+		}
+		document.querySelector(".vopros3").onclick = function() {
+		ochki = ochki + 1
+		document.querySelector(".zero").innerHTML = ochki
+		alert("глаз алмаз");
+		document.querySelector(".vopros3").style.display="none"
+		}
+		document.querySelector(".vopros4").onclick = function() {
+		ochki = ochki + 1
+		document.querySelector(".zero").innerHTML = ochki
+		alert("молодец");
+		document.querySelector(".vopros4").style.display="none"
+		}
+		document.querySelector(".vopros5").onclick = function() {
+		ochki = ochki + 1
+		document.querySelector(".zero").innerHTML = ochki
+		alert("ок");
+		document.querySelector(".vopros5").style.display="none"
+		}
+</script>
+</body>
+</html>
